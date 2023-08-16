@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - A Pen by Ambi93</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,12 +11,14 @@
     <button onclick="addPaperType()">Add Paper Type</button>
     <div id="papers"></div>
     <button onclick="calculate()">Calculate</button>
+    <div id="sorting">
+        <label for="sort-by">Sort by:</label>
+        <select id="sort-by" onchange="sortResults()">
+            <option value="cost">Cost</option>
+            <option value="brand">Brand</option>
+        </select>
+    </div>
     <div id="result"></div>
     <script src="script.js"></script>
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
 </body>
 </html>
